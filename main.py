@@ -1,3 +1,4 @@
+# Ayush Kumar Singh (C0799530) flask intro+jinja
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
@@ -23,7 +24,7 @@ def user_data():
     if request.method == 'POST':
         first_name = request.form.get("fname")
         last_name = request.form.get("lnm")
-        dist = {"fname":first_name, "lname":last_name}
+        dist = {"fname": first_name, "lname": last_name}
         result = '''
         <h1>First name : {}</h1>
         <h1>Last name : {}</h1>
